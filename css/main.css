@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+:root{
+    --gray-logo: #3A404E;
+    --white: #ffffff;
+    --gray-secondary: #667085;
+    --gray-primary: #101828;
+    --red-primary: #8E2424;
+    --font-family: 'Inter', sans-serif;
+}
+body{
+    font-family: var(--font-family);
+    color: var(--gray-secondary);
+    background-color: var(--white);
+    font-weight: 400;
+    font-size: 16px;
+}
+a{
+    text-decoration: none;
+}
+
+/* Navbar */
+.nav__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em 6em;
+}
+.nav__company{
+    font-size: 1.2em;
+    font-weight: 500;
+    padding-left: 1.8em;
+    position: relative;
+}
+.nav__company::before{
+    content: url('/img/OptimusTech\ logo.svg');
+    top: -.3em;
+    left: 0;
+    position: absolute;
+}
+.nav__company--link{
+    color: var(--gray-logo);
+}
+.nav__logo{
+    flex-grow: 1;
+}
+.nav__list{
+    display: flex;
+    flex-grow: 2;
+    column-gap: 2em;
+}
+.nav__list-item--link, .nav__login--link{
+    color: var(--gray-secondary);
+}
+.nav__profile{
+    display: flex;
+    flex-shrink: 1;
+    column-gap: 2em;
+}
+.nav__register--link{
+    color: var(--white);
+    background-color: var(--red-primary);
+    padding: .8em;
+    border-radius: 8px;
+}
