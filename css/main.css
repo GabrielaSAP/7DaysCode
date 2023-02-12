@@ -13,7 +13,8 @@ body{
     background-color: var(--white);
     font-weight: 400;
     font-size: 16px;
-    margin: 0 6em;
+    line-height: 1.5em;
+    margin: 0 8em;
 }
 a{
     text-decoration: none;
@@ -67,27 +68,50 @@ a{
     border-radius: 8px;
 }
 
-/* Header Section */
-.header__main{
+/* Section about-us */
+.about-us__container{
     margin: 5em auto;
     text-align: center;
 }
-.header__subtitle{
+.about-us__subtitle{
     font-weight: 600;
     color: var(--red-primary);
 }
-.header__title{
+.about-us__title{
     font-weight: 600;
     font-size: 2.6em;
     color: var(--gray-primary);
     margin: .5em auto;
 }
-.header__lead{
-    width: 56%;
+.about-us__lead{
+    width: 60%;
     margin: 0 auto;
     padding: 1em 0;
     font-size: 1.2em;
     line-height: 1.5em;
 }
 
-/* Section about-us */
+/* Section metrics */
+.metrics__container{
+    padding: 2em 0;
+    display: flex;
+    column-gap: 3em;
+}
+.metrics__item{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    row-gap: .6em;
+}
+.metrics__number{
+    font-weight: 600;
+    font-size: 4em;
+    color: var(--red-primary);
+    display: block;
+}
+.metrics__title{
+    font-weight: 500;
+    font-size: 1.1em;
+    color: var(--gray-primary);
+    padding-top: 1.8em;
+}
