@@ -68,27 +68,30 @@ a{
     border-radius: 8px;
 }
 
-/* Section about-us */
-.about-us__container{
+/* Section header */
+.header__container{
     margin: 5em auto;
     text-align: center;
 }
-.about-us__subtitle{
+.header__subtitle{
     font-weight: 600;
     color: var(--red-primary);
 }
-.about-us__title{
+.header__title{
     font-weight: 600;
     font-size: 2.6em;
     color: var(--gray-primary);
     margin: .5em auto;
 }
-.about-us__lead{
+.header__lead{
     width: 60%;
     margin: 0 auto;
     padding: 1em 0;
     font-size: 1.2em;
     line-height: 1.5em;
+}
+.header__image{
+    margin: 4em 0;
 }
 
 /* Section metrics */
@@ -114,4 +117,9 @@ a{
     font-size: 1.1em;
     color: var(--gray-primary);
     padding-top: 1.8em;
+}
+
+/* Section Open to Work */
+.open-to-work{
+    margin-top: 10em;
 }
