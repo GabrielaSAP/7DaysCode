@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
 :root{
-    --gray-logo: #3A404E;
     --white: #ffffff;
+    --gray-border: #EAECF0;
+    --gray-logo: #3A404E;
     --gray-secondary: #667085;
     --gray-primary: #101828;
     --red-primary: #8E2424;
@@ -91,7 +92,8 @@ a{
     line-height: 1.5em;
 }
 .header__image{
-    margin: 4em 0;
+    margin: 4em 0 0;
+    width: 100%;
 }
 
 /* Section metrics */
@@ -121,5 +123,48 @@ a{
 
 /* Section Open to Work */
 .open-to-work{
-    margin-top: 10em;
+    margin: 10em 0;
+}
+.open-to-work .header__container{
+    margin-bottom: 2em;
+}
+.job__container{
+    width: 60%;
+    margin: 0 auto;
+}
+.job__title{
+    font-weight: 500;
+    font-size: 1.15em;
+    color: var(--gray-primary);
+    margin-bottom: 1.5em;
+}
+.job__list{
+    row-gap: 1.5em;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 3em;
+}
+.job__item{
+    padding: 1.5em;
+    border: var(--gray-border) 0.5px solid;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 1.2em;
+    row-gap: 1.5em;
+    grid-template-areas: 
+        "title title"
+        "subtitle salary";
+}
+.job__item-subtitle{
+    grid-area: title;
+    font-weight: 500;
+    font-size: 1.1em;
+    color: var(--gray-primary);
+}
+.job__item-type{
+    grid-area: subtitle;
+}
+.job__item-salary{
+    grid-area: salary;
 }
