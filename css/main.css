@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
 :root{
     --white: #ffffff;
-    --gray-border: #EAECF0;
+    --gray-primary: #101828;
     --gray-logo: #3A404E;
     --gray-secondary: #667085;
-    --gray-primary: #101828;
+    --gray-terciary: #98A2B3;
+    --gray-border-2: #D0D5DD;
+    --gray-border: #EAECF0;
     --red-primary: #8E2424;
     --font-family: 'Inter', sans-serif;
 }
@@ -192,4 +194,46 @@ a{
 .testimonial .header__lead{
     font-size: .9em;
     padding-top: .5em;
+}
+
+/* Footer */
+.footer{
+    padding: 6em 0;
+    text-align: center;
+}
+.footer .header__container{
+    margin-bottom: 1em;
+}
+.form{
+    display: flex;
+    justify-content: center;
+    column-gap: 1em;
+}
+.form__email::placeholder{
+    font-family: var(--font-family);
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--gray-secondary);
+}
+.form__email{
+    width: 18rem;
+    padding: 1rem;
+    border-radius: 0.5em;
+    font-family: var(--font-family);
+    border: 1px solid var(--gray-border-2);
+}
+.form__submit{
+    border-radius: 0.5em;
+    border: none;
+    font-family: var(--font-family);
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 1em 1.5em;
+    color: var(--white);
+    background-color: var(--red-primary);
+}
+.copyright{
+    font-weight: 400;
+    color: var(--gray-terciary);
+    padding-top: 2em;
 }
