@@ -37,7 +37,7 @@ a{
     position: relative;
 }
 .nav__company::before{
-    content: url('/img/OptimusTech\ logo.svg');
+    content: url('/img/OptimusTech_logo.svg');
     top: -.3em;
     left: 0;
     position: absolute;
